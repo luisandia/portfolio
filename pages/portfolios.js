@@ -3,6 +3,7 @@ import React, {Component} from 'react'
 import BaseLayout from '../components/layouts/BaseLayout';
 // import Link from 'next/link'
 import {Link} from '../routes'
+import BasePage from '../components/BasePage';
 
 
 export default class portfolios extends Component {
@@ -37,8 +38,8 @@ export default class portfolios extends Component {
 
   render() {
     const {posts} = this.props;
-1
-    return (<BaseLayout><ul>{this.renderPosts(posts)}</ul>
+
+    return (<BaseLayout><BasePage><ul>{this.renderPosts(posts)}</ul></BasePage>
       </BaseLayout>)
   }
 }

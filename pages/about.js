@@ -6,7 +6,7 @@ export class About extends Component {
   render() {
     return (
       <BaseLayout>
-      <BasePage>
+      <BasePage className="about-page">
       <h1>I am about Page</h1>
       </BasePage>
       </BaseLayout>
