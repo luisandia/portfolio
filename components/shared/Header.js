@@ -1,13 +1,10 @@
 import React, { Component } from "react";
 import Link from 'next/link'
-
 export default class Header extends Component {
   render() {
-      const title = this.props.title;
     return (
       <div>
         <React.Fragment>
-            <p>{title}</p>
           <Link href="/">
             <a>Home</a>
           </Link>
